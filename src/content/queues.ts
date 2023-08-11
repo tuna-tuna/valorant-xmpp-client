@@ -15,6 +15,10 @@ export class Queues {
         id: 'ggteam',
         name: 'Escalation',
     }
+    static TeamDeathmatch: QueueObject = {
+        id: 'hurm',
+        name: 'Team Deathmatch'
+    }
     static NewMap: QueueObject = {
         id: 'newmap',
         name: 'New Map',
@@ -23,6 +27,10 @@ export class Queues {
         id: 'onefa',
         name: 'Replication',
     }
+    static Premier: QueueObject = {
+        id: 'premier',
+        name: 'Premier'
+    }
     static SnowballFight: QueueObject = {
         id: 'snowball',
         name: 'Snowball Fight',
@@ -30,6 +38,10 @@ export class Queues {
     static SpikeRush: QueueObject = {
         id: 'spikerush',
         name: 'Spike Rush',
+    }
+    static Swiftplay: QueueObject = {
+        id: 'swiftplay',
+        name: 'Swiftplay'
     }
     static Unrated: QueueObject = {
         id: 'unrated',
@@ -42,5 +54,5 @@ export interface QueueObject {
     name: string
 }
 
-export type QueueIds = ('competitive' | 'custom' | 'deathmatch' | 'ggteam' | 'newmap'
-    | 'onefa' | 'snowball' | 'spikerush' | 'unrated') | (string & {});
+export type QueueIds = ('competitive' | 'custom' | 'deathmatch' | 'ggteam' | 'hurm' | 'newmap'
+    | 'onefa' | 'premier' | 'snowball' | 'spikerush' | 'swiftplay' | 'unrated') | (string & {});
