@@ -35,6 +35,31 @@ export class Maps {
         uuid: 'd960549e-485c-e861-8d71-aa9d1aed12a2',
         url: '/Game/Maps/Bonsai/Bonsai'
     }
+    static Pearl: MapObject = {
+        name: 'Pearl',
+        uuid: 'fd267378-4d1d-484f-ff52-77821ed10dc2',
+        url: '/Game/Maps/Pitt/Pitt'
+    }
+    static Lotus: MapObject = {
+        name: 'Lotus',
+        uuid: '2fe4ed3a-450a-948b-6d6b-e89a78e680a9',
+        url: '/Game/Maps/Jam/Jam'
+    }
+    static District: MapObject = {
+        name: 'District',
+        uuid: '690b3ed2-4dff-945b-8223-6da834e30d24',
+        url: '/Game/Maps/HURM/HURM_Alley/HURM_Alley'
+    }
+    static Kasbah: MapObject = {
+        name: 'Kasbah',
+        uuid: '12452a9d-48c3-0b02-e7eb-0381c3520404',
+        url: '/Game/Maps/HURM/HURM_Bowl/HURM_Bowl'
+    }
+    static Piazza: MapObject = {
+        name: 'Piazza',
+        uuid: 'de28aa9b-4cbe-1003-320e-6cb3ec309557',
+        url: '/Game/Maps/HURM/HURM_Yard/HURM_Yard'
+    }
     static TheRange: MapObject = {
         name: 'The Range',
         uuid: 'ee613ee9-28b7-4beb-9666-08db13bb2244',
@@ -44,7 +69,9 @@ export class Maps {
 
 export type MapUrls = ('/Game/Maps/Ascent/Ascent' | '/Game/Maps/Duality/Duality' | '/Game/Maps/Foxtrot/Foxtrot'
     | '/Game/Maps/Canyon/Canyon' | '/Game/Maps/Triad/Triad' | '/Game/Maps/Port/Port'
-    | '/Game/Maps/Bonsai/Bonsai' | '/Game/Maps/Poveglia/Range') | (string & {});
+    | '/Game/Maps/Bonsai/Bonsai' | '/Game/Maps/Pitt/Pitt' | '/Game/Maps/Jam/Jam'
+    | '/Game/Maps/HURM/HURM_Alley/HURM_Alley' | '/Game/Maps/HURM/HURM_Bowl/HURM_Bowl' | '/Game/Maps/HURM/HURM_Yard/HURM_Yard'
+    | '/Game/Maps/Poveglia/Range') | (string & {});
 
 export interface MapObject {
     name: string
