@@ -15,12 +15,14 @@ const ciphers = [
 
 const agent = new Agent({ ciphers: ciphers.join(':'), honorCipherOrder: true, minVersion: 'TLSv1.2' });
 
+const RIOT_UA = 'RiotClient/69.0.3.228.1352 rso-auth (Windows; 10;;Professional, x64)'
+
 export class Authorization {
     static createSession = (options: any, headers?: any, axiosConfig?: AxiosRequestConfig) => new GenericRequest()
         .setUrl(Endpoints.Auth() + '/api/v1/authorization')
         .setMethod('POST')
         .setHeaders({
-            'User-Agent': 'RiotClient/43.0.1.4195386.4190634 rso-auth (Windows; 10;;Professional, x64)',
+            'User-Agent': RIOT_UA,
             ...headers
         })
         .setBody({
@@ -36,7 +38,7 @@ export class Authorization {
         .setMethod('PUT')
         .setHeaders({
             Cookie: cookie,
-            'User-Agent': 'RiotClient/43.0.1.4195386.4190634 rso-auth (Windows; 10;;Professional, x64)'
+            'User-Agent': RIOT_UA
         })
         .setBody({
             type: 'auth',
@@ -55,7 +57,7 @@ export class Authorization {
         .setMethod('PUT')
         .setHeaders({
             Cookie: cookie,
-            'User-Agent': 'RiotClient/43.0.1.4195386.4190634 rso-auth (Windows; 10;;Professional, x64)'
+            'User-Agent': RIOT_UA
         })
         .setBody({
             type: 'multifactor',
