@@ -46,7 +46,7 @@ export class ValorantXmppClient extends EventEmitter {
     _config: ValorantXmppConfig;
 
     _presence: PresenceBuilder;
-    _presenceInterval: NodeJS.Timer; 
+    _presenceInterval: ReturnType<typeof setInterval>; 
 
     _account: Account;
     friends: Array<Friend>;
