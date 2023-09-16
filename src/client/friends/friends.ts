@@ -61,6 +61,7 @@ export interface RosterInput {
 export interface RosterOutput {
     sender: JidObject
     recipient: JidObject
+    roster: Friend[] | Friend
     type: ('result' | 'set') | (string & {}) | null
     id: string | null
     [propName: string]: any
